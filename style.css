@@ -1,0 +1,190 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(245, 246, 247);
+}
+
+.total{
+    width: 30%;
+    margin: auto;
+}
+
+.Logo{
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+nav{
+    margin-top: 40px;
+}
+.main_chk{
+    float: left;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #666;
+    border-radius: 50% ;
+    appearance: none;
+    transition: background 0.5s;
+}
+.chk {
+    float: left;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #666;
+    border-radius: 50% ;
+    appearance: none;
+    transition: background 0.5s;
+}
+.accept{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 30px;
+}
+.accept_sec{
+    
+    display: inline;
+    align-items: center;
+    width: 50%;
+    height: 30px;
+}
+
+input[type="checkbox"]:checked {
+    background: #32e732;
+    border: none;
+  }
+.terms{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.green_font{
+    color: rgb(0, 200, 80);
+}
+
+section {
+    margin-top: 50px;
+}
+.more_info{
+    justify-content: space-between;
+    display: flex;
+}
+
+.chk_terms{
+    overflow:scroll; 
+    width: 92%;
+    height:150px;
+    border: 1px solid gray;
+    font-size: 12px;
+    padding: 10px 20px;
+    line-height: 2;
+    display: inline-block;
+}
+
+.baby{
+    padding: 5px 10px; 
+    display: inline-block;
+    border: 2px solid rgb(0, 200, 80);
+    color: 2px solid rgb(0, 200, 80);
+    font-size: 10px;
+}   
+
+.third, .fourth{
+    margin-top: 30px;
+}
+
+.second{
+    margin-top: 30px;
+    margin-bottom: 0;
+    justify-content: space-between;
+}
+.terms_font{
+    display: inline-block;
+    padding-top: 10px;
+    color:#666;
+    font-size: 12px;
+}
+
+.btn_area{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    justify-content: space-around;
+    text-align: center;
+}
+.cancel{
+    font-size: 18px;
+    color:#fff;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0 15px;
+    width: 49%;
+    background: gray;
+}
+.next{
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0 15px;
+    width: 49%;
+    background: rgb(0, 200, 80);
+}
+.next a , .cancel a{
+    color:white;
+}
+
+.group_join{
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+}
+
+.group_join a{
+    color:#000;
+    text-decoration: underline;
+}
+
+.fot_top ul li{
+    float: left;
+    text-align: center;
+}
+
+.fot_top ul li a{
+    color: #000;
+}
+
+.fot_top ul li:nth-child(n+2) {
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fot_top ul li:nth-child(n+2)::after {
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: gray;
+}
+.fot_bot{
+    text-align: center;
+    font-size: 10px;
+    padding:20px;
+}
