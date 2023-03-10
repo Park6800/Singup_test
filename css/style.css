@@ -11,20 +11,27 @@ body{
     background: rgb(245, 246, 247);
 }
 
-.total{
-    width: 30%;
+.warp_{
+    width: 500px;
     margin: auto;
+}
+.language{
+    width: 50%;
+    margin: auto;
+    text-align: right;
+    margin-top: 10px;
+  
 }
 
 .Logo{
-    height: 100px;
+    height: 80px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
-
 
 nav{
     margin-top: 40px;
+    justify-content: space-between;
 }
 .main_chk{
     float: left;
@@ -34,6 +41,7 @@ nav{
     border-radius: 50% ;
     appearance: none;
     transition: background 0.5s;
+    margin: 18px;
 }
 .chk {
     float: left;
@@ -48,14 +56,13 @@ nav{
     margin-left: 10px;
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 90%;
     height: 30px;
 }
 .accept_sec{
-    
-    display: inline;
+    display: flex;
     align-items: center;
-    width: 50%;
+    width: 70%;
     height: 30px;
 }
 
@@ -67,7 +74,7 @@ input[type="checkbox"]:checked {
     display: inline;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     text-decoration: underline;
 }
@@ -91,6 +98,7 @@ section {
     font-size: 12px;
     padding: 10px 20px;
     line-height: 2;
+    margin: 10px;
     display: inline-block;
 }
 
@@ -106,7 +114,7 @@ section {
     margin-top: 30px;
 }
 
-.second{
+.seconde{
     margin-top: 30px;
     margin-bottom: 0;
     justify-content: space-between;
@@ -143,6 +151,9 @@ section {
     padding: 15px 0 15px;
     width: 49%;
     background: rgb(0, 200, 80);
+    border: 0px;
+    color: #fff;
+    cursor: pointer;
 }
 .next a , .cancel a{
     color:white;
@@ -159,6 +170,8 @@ section {
     text-decoration: underline;
 }
 
+
+
 .fot_top ul li{
     float: left;
     text-align: center;
@@ -166,6 +179,7 @@ section {
 
 .fot_top ul li a{
     color: #000;
+    font-size: 14px;
 }
 
 .fot_top ul li:nth-child(n+2) {
@@ -183,8 +197,17 @@ section {
     height: 15px;
     background-color: gray;
 }
+.fot_logo{
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
 .fot_bot{
     text-align: center;
-    font-size: 10px;
-    padding:20px;
+    font-size: 11px;
+    padding: 30px;    
+}
+.error{
+    margin-top: 10px;
+    color:red;
 }

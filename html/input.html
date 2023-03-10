@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="in_style.css">
+    <title>네이버 : 회원가입</title>
+    <link rel="stylesheet" href="/css/in_style.css">
+    <link rel="icon" href="/img/clone.ico">
 </head>
 
 <body>
-    <div class="total">
+    <div class="warp_">
         <header>
             <div class="Logo">
-                <img src="logo.png" width="300px" height="100px">
+                <img src="/img/logo.png" width="260px" height="60px">
             </div>
         </header>
         <section>
             <div class="In_INFO">
                 <div class="ID">아이디</div>
                 <input type="text" class="INFO_value" id="ID_value" placeholder="@naver.com">
-                <div id="idError" class="error"></div>
+                <div id="idError" class="error" name="/"></div>
             </div>
             <div class="In_INFO">
                 <div class="PW">비밀번호</div>
@@ -30,18 +31,18 @@
             <div class="In_INFO">
                 <div class="RPW">비밀번호 재확인</div>
                 <input type="text" class="INFO_value" id="CHK_PW_value" placeholder="">
-                <div id="chk_pwError" class="error"></div>
+                <div id="chk_pwError" class="error" naem="siaval"></div>
             </div>
             <div class="In_INFO">
                 <div class="NAME">이름</div>
                 <input type="text" class="INFO_value" id="name" placeholder="이름을 입력해주세요">
-                <div id="nameError" class="error"></div>
+                <div id="nameError" class="error" value="0"></div>
             </div>
             <div class="In_INFO_date">
                 <div class="in_Year">생년 월일</div>
-                <input type="text" placeholder="년(4자)" class="year" id="Year">
-                <select class="month">
-                    <option value="0">월</option>
+                <input type="text" placeholder="년(4자)" class="year" id="Year" maxlength="4">
+                <select class="month" id="Moon">
+                    <option value="0" disabled selected>월</option>
                     <option value="1">1 월</option>
                     <option value="2">2 월</option>
                     <option value="3">3 월</option>
@@ -55,37 +56,45 @@
                     <option value="11">11 월</option>
                     <option value="12">12 월</option>
                 </select>
-                <input type="text" placeholder="일" class="day">
+                <input type="text" placeholder="일" class="day" id="Day" maxlength="2">
             </div>
-            <div id="yearError" class="error"></div>
+            <div id="yearError" class="error" value="0"></div>
             <div class="INFO_sex">
                 <div class="sex">성별</div>
-                <select class="s_sex">
+                <select class="s_sex" onchange="change_sex()" id="Cg_sex">
                     <option value="성별">성별을 선택하세요</option>
                     <option value="남">남성</option>
                     <option value="여">여성</option>
+                    <option value="선택안함">선택안함</option>
                 </select>
             </div>
+            <div id="sexError" class="error"></div>
+            <div class="INFO_email">
+                <div class="chk_email">본인 확인 이메일<span class="chk_select">(선택)</span></div>
+                <input type="text" class="INFO_value" id="CHK_email_value" placeholder="">
+            </div>
+            <div id="emailError" class="error"></div>
             <div class="con_line">
                 <div class="call_num">휴대 전화</div>
                 <select class="contury">
-                    <option value="">대한민국 + 82</option>
-                    <option value="">좆본 </option>
-                    <option value="">천조국 </option>
-                    <option value="">죽짱 </option>
+                    <option value="0">대한민국 + 82</option>
+                    <option value="1">일본 + 81</option>
+                    <option value="2">미국/캐나다 + 1</option>
+                    <option value="3">중국 +86</option>
                 </select>
                 <div class="chk">
-                    <input type="tel" class="phone" placeholder="전화 번호를 입력하세요" maxlength="11">
-                    <input type="button" value="인증 번호 전송" class="submit_btn1">
+                    <input type="tel" class="phone" placeholder="전화 번호를 입력하세요" maxlength="11" id="phone_num">
+                    <input type="button" value="인증 번호 전송" class="submit_btn1" onclick="randomNum()">
                 </div>
-                <input type="text" pattern="[0-9]+" class="certified_number" placeholder="숫자 인증번호만 입력하세요.">
+                <input type="text" class="certified_number" placeholder="숫자 인증번호만 입력하세요." id="chk_number">
             </div>
-            <div class="Submit_register">
-                <input type="submit" value="가 입 하 기" class="submit_btn2" >
+            <div id="phoneError" class="error" value="0"></div>
+            <div class="Submit_join">
+                <input type="submit" value="가 입 하 기" class="submit_btn2" id="join">
             </div>
         </section>
     </div>
-    <script src="/script.js">
+    <script src="/js/script.js">
 
     </script>
 </body>

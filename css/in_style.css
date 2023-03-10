@@ -12,8 +12,8 @@ body {
     background: rgb(245, 246, 247);
 }
 
-.total {
-    width: 25%;
+.warp_ {
+    width: 500px;
     margin: auto;
 }
 
@@ -52,12 +52,17 @@ body {
     font-size: 15px;
 }
 
+
 .INFO_sex{
     margin-top: 30px;
 }
 .s_sex{
     padding: 10px;
     width: 100%;
+}
+
+.INFO_email{
+    margin-top: 40px;
 }
 
 .con_line{
@@ -114,3 +119,4 @@ body {
     margin-top: 10px;
     color:blue;
 }
+

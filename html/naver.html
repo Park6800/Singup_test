@@ -5,29 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>네이버 : 회원가입</title>
+    <link rel="stylesheet" href="/css/style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="naver.js"></script>
-  
+    <script src="/js/naver.js"></script>
+    <link rel="icon" href="/img/clone.ico">
+
 </head>
 
 <body>
-    <div class="total">
+    <div class="language">
+        <select class="sel_lang" onchange="change_page()" id="cg_page">
+            <option value="ko"selected>한국어</option>
+            <option value="en">영어</option>
+            <option value="jp">일본어</option>
+        </select>
+    </div>
+    <div class="warp_">
         <header>
             <div class="Logo">
-                <img src="logo.png" width="300px" height="100px">
+                <img src="/img/logo.png" width="300px" height="80px">
             </div>
         </header>
         <nav>
-            <input type="checkbox" class="main_chk" onclick='selectAll(this)'id="selectAll">
+            <input type="checkbox" class="main_chk" onclick='selectAll(this)' id="selectAll">
             <div class="terms">
                 네이버 이용약관, 개인정보 수집 및 이용, 위치기반 서비스 이용약관 (선택), 프로모션 정보 수신 (선택)에 모두 동의합니다.
             </div>
         </nav>
         <section>
             <div class="first">
-                <input type="checkbox" class="chk" name="btn_check" onclick="CheckValue(this)">
+                <input type="checkbox" class="chk" name="btn_check" onclick="CheckValue(this)" id="vital_chk1">
                 <div class="accept">네이버 이용약관 동의<span class="green_font">(필수)</span></div>
                 <div class="chk_terms">
                     여러분을 환영합니다.
@@ -231,10 +239,10 @@
                     네이버 서비스와 관련하여 궁금하신 사항이 있으시면 고객센터(대표번호: 1588 – 3820/ 평일 09:00~18:00)로 문의 주시기 바랍니다.
                 </div>
             </div>
-            <div class="second">
-                <input type="checkbox" class="chk" name="btn_check" onclick="CheckValue(this)">
+            <div class="seconde">
+                <input type="checkbox" class="chk" name="btn_check" onclick="CheckValue(this)" id="vital_chk2">
                 <span class="more_info">
-                    <div class="accept_sce">개인정보 수집 및 이용 동의<span class="green_font">(필수)</span></div>
+                    <div class="accept_sec">개인정보 수집 및 이용 동의<span class="green_font">(필수)</span></div>
                     <div class="baby">어린이용 안내</div>
                 </span>
                 <div class="chk_terms">
@@ -415,6 +423,7 @@
                         네이버에서 제공하는 이벤트/혜택 등 다양한 정보를 휴대전화(네이버앱 알림 또는 문자), 이메일로 받아보실 수 있습니다. 일부 서비스(별도 회원 체계로 운영하거나 네이버 가입
                         이후 추가 가입하여 이용하는 서비스 등)의 경우, 개별 서비스에 대해 별도 수신 동의를 받을 수 있으며, 이때에도 수신 동의에 대해 별도로 안내하고 동의를 받습니다.
                     </div>
+                    <div id="termsError" class="error"></div>
                 </div>
         </section>
         <div class="btn_area">
@@ -423,15 +432,16 @@
                     취소
                 </a>
             </span>
-            <span class="next">
-                <a href="input.html">
+          
+                <button class="next" onclick="chk_terms_func()">
                     확인
-                </a>
-            </span>
+                </button>
+        
+
         </div>
         <div class="group_join">회사, 동아리 등 단체에서 사용할 ID가 필요하세요?<a href="#">단체 회원 가입</a></div>
 
-        <footter>
+        <footer>
             <div class="fot_top">
                 <ul>
                     <li><a href="#">이용약관</a></li>
@@ -440,8 +450,9 @@
                     <li><a href="#">회원정보 고객센터</a></li>
                 </ul>
             </div>
-            <div class="fot_bot">naver Copyright NAVER Corp. All Rights Reserved.</div>
-        </footter>
+            <div class="fot_bot"><a href="https://naver.com" class="fot_logo"><img src="/logo.png" width="63px"
+                        height="11px"></a>naver Copyright NAVER Corp. All Rights Reserved.</div>
+        </footer>
     </div>
 </body>
 
