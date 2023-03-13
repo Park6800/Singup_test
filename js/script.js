@@ -186,12 +186,13 @@ document.getElementById("phone_num")
 var ran_number = parseInt(Math.random() * 10000);
 function randomNum() {
   if (document.getElementById("phoneError").className == "checking") {
-    var ran_number = parseInt(Math.random() * 10000);
     console.log(ran_number);
+    document.getElementById("chk_number").removeAttribute("disabled");
   }
   else {
-    alert("전화번호를 입력하세용.")
+    alert("전화번호를 입력하세요.")
   }
+  
 }
 
 document.getElementById("chk_number")
@@ -205,6 +206,7 @@ document.getElementById("chk_number")
       document.getElementById("phoneError").setAttribute('class', 'error');
     }
   })
+
 
 
 document.getElementById("join")

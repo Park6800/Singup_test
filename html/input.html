@@ -84,9 +84,9 @@
                 </select>
                 <div class="chk">
                     <input type="tel" class="phone" placeholder="전화 번호를 입력하세요" maxlength="11" id="phone_num">
-                    <input type="button" value="인증 번호 전송" class="submit_btn1" onclick="randomNum()">
+                    <input type="button" value="인증 번호 전송" class="submit_btn1" onclick="randomNum()" id="output_rannum">
                 </div>
-                <input type="text" class="certified_number" placeholder="숫자 인증번호만 입력하세요." id="chk_number">
+                <input type="text" class="certified_number" placeholder="숫자 인증번호만 입력하세요." id="chk_number" disabled>
             </div>
             <div id="phoneError" class="error" value="0"></div>
             <div class="Submit_join">

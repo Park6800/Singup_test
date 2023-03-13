@@ -20,7 +20,6 @@ body{
     margin: auto;
     text-align: right;
     margin-top: 10px;
-  
 }
 
 .Logo{
@@ -41,7 +40,7 @@ nav{
     border-radius: 50% ;
     appearance: none;
     transition: background 0.5s;
-    margin: 18px;
+    margin: 18px 18px 18px 4px;
 }
 .chk {
     float: left;
